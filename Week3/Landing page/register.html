@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <main class="container register">
+      <h1 class="register-heading">Register</h1>
+      <form class="action" method="post" action="login.html">
+        <div class="requirements">
+          <label for="fname">First Name</label>
+          <input type="text" name="fname" id="fname" required/>
+        </div>
+        <div class="requirements">
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" id="lname" required>
+        </div>
+        <div class="requirements">
+            <label for="pnum">Phone Number</label>
+            <input type="number" name="Phone" id="pnum" required>
+        </div>
+        <div class="requirements">
+          <label for="email">Email</label>
+          <input type="email" name="mail" id="email" required/>
+        </div>
+        <div class="requirements">
+            <label for="gender" name="gender">Gender</label>
+            <select name="gender" id="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+        <div class="requirements">
+            <label for="date">Date of Birth</label>
+            <input type="date" name="date" id="date" required>
+        </div>
+        <div class="requirements">
+            <label for="fcolor">Favourite Color</label>
+            <input type="color" name="fcolor" id="fcolor" required>
+        </div>
+        <div class="requirements">
+          <label for="pass">Password</label>
+          <input type="password" name="password" id="pass" required/>
+        </div>
+        <div>
+            <input class="button" type="submit" value="Sign Up" />
+        </div>
+      </form>
+      <p>Already have an account? <a href="./login.html">sign in now</a></p>
+    </main>
+  </body>
+</html>
